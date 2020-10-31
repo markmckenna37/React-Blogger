@@ -3,7 +3,7 @@ import axios from "../../../axios";
 import { Route } from "react-router-dom";
 import Post from "../../../components/Post/Post";
 import "./Posts.css";
-import FullPost from "../FullPost/FullPost"
+import FullPost from "../FullPost/FullPost";
 
 class Posts extends Component {
 
@@ -54,7 +54,7 @@ render () {
     <section className="Posts">
         {posts}
     </section>
-    <Route path={this.props.match.url + "/:id"} exact component={FullPost} />
+    <Route path="/posts/:id" exact component={FullPost} />
         </div>
     )
 }
